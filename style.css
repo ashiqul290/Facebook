@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    max-width: 1490px;
+    margin: 0 auto;
+}
+/* 
+header area
+*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px black;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+}
+.search-box img{
+width: 50px;
+border-radius: 50%;
+}
+.search{
+    position: relative;
+}
+.fa-magnifying-glass{
+ position: absolute;
+top: 10px;
+left: 18px;
+color: gray;
+font-size: 20px;
+
+}
+.search input{
+font-size: 18px;
+ padding: 10px 5px  10px 40px ;
+ outline: none;
+ border: 1px solid gray;
+ border-radius: 20px;
+ margin-left: 10px;
+}
+.nav-icon{
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    font-size: 25px;
+    position: relative;
+    left: -80px;
+}
+.nav-icon a{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 110px;
+    color: rgba(80, 73, 73, 0.459);
+    padding: 10px 0;
+    
+}
+.home{
+  display: none;
+}
+.nav-icon a:hover {
+    background: rgba(122, 116, 116, 0.158);
+    border-radius: 20px;
+}
+
+.nav-icon a:hover .home{
+    display: block;
+    width: 100px;
+      position: absolute;
+    bottom:-40px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.671);
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.nav-icon a:nth-child(2){
+    position: relative;
+}
+.nav-icon a:nth-child(3){
+    position: relative;
+}
+.nav-icon a:nth-child(4){
+    position: relative;
+}
+.nav-icon a:nth-child(5){
+    position: relative;
+}
+
+.right-icon{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 20px;
+}
+ .rightic a{
+    padding: 10px;
+    color: black;
+    background: rgb(201, 193, 193);
+    border-radius: 20px;
+}
+ .rightic a:hover{
+    background: rgb(170, 161, 161);  
+ }
+  .rightic a:hover .home{
+    display: block;
+    position: absolute;
+    bottom:-50px;
+    left: -20px;
+    background: rgba(0, 0, 0, 0.671);
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+  }
+.rightic a:nth-child(1){
+        position: relative;
+    }
+.rightic a:nth-child(2){
+     position: relative;
+}
+.rightic a:nth-child(3){
+        position: relative;
+    }
+.account-icon a img{
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+}
+.account-icon a  i{
+    position: absolute;
+    bottom:12px;
+    right: 20px;
+    font-size: 12px;
+    background: rgb(211, 205, 205);
+    color: rgb(63, 62, 62);
+    border-radius: 50%;
+}
+/* 
+header area
+*/
+/* ==========Home section area ==========*/
+.home-wrepper{
+    margin-top: 50px;
+    width: 100%;
+display: flex;
+
+}
+
+.home-wrepper .left{
+    padding: 20px 10px;
+width: 30%;
+height:93.5vh;
+overflow: auto;
+display: block;
+scrollbar-width: none;
+  transition: .5s;
+}
+.home-wrepper .left:hover{
+    transition: 2s;
+scrollbar-width: auto;
+}
+.home-wrepper .left .profile a{
+display: flex;
+gap: 20px;
+align-items: center;
+font-size: 20px;
+padding: 5px 10px;
+margin: 10px 0;
+border-radius: 10px;
+color: black;
+}
+.home-wrepper .left .profile a:hover{
+      background: rgb(235, 227, 227);
+}
+.home-wrepper .left .profile a img{
+    width: 50px;
+    border-radius: 50%;
+}
+.home-wrepper .left .dashboard a{
+display: flex;
+gap: 20px;
+align-items: center;
+font-size: 20px;
+padding: 5px 10px;
+margin: 10px 0;
+border-radius: 10px;
+color: black;
+}
+.home-wrepper .left .dashboard a:hover {
+      background: rgb(235, 227, 227);
+ }
+.dashboard a img{
+    font-size: 30px;
+    padding: 6px 0;
+}
+.home-wrepper .left .details a{
+display: flex;
+gap: 20px;
+align-items: center;
+font-size: 20px;
+padding: 5px 10px;
+margin: 10px 0;
+border-radius: 10px;
+color: black;
+}
+.home-wrepper .left .details a:hover {
+      background: rgb(235, 227, 227);
+ }
+.home-wrepper .left .details a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(23, 122, 235);
+}
+
+.home-wrepper .left  .more a{
+display: flex;
+gap: 20px;
+align-items: center;
+font-size: 20px;
+padding: 5px 10px;
+margin: 10px 0;
+border-radius: 10px;
+color: black;
+}
+.home-wrepper .left  .more a:hover{
+    background: rgb(235, 227, 227);
+}
+.home-wrepper .left  .more a{
+ padding: 10px 0;
+}
+.home-wrepper .left  .more a i{
+    display: flex;
+    justify-content: center;
+ background: rgb(216, 212, 212);
+ margin-left: 10px;
+ font-size: 20px;
+ padding: 10px 20px;
+ border-radius: 50%;
+ color: black;
+ 
+}
+.hide-details{
+    display: none;
+}
+
+.home-wrepper .left .Marketplece a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(7, 147, 182);
+}
+.home-wrepper .left .adds a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(7, 182, 80);
+}
+.home-wrepper .left .gift a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(132, 7, 182);
+}
+.home-wrepper .left .events a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(153, 36, 66);
+}
+.home-wrepper .left .Memories a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(87, 19, 197);
+}
+.home-wrepper .left .page a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(209, 103, 16);
+}
+.home-wrepper .left .gaming a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(6, 77, 124);
+}
+.home-wrepper .left .reels a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(170, 68, 1);
+}
+.home-wrepper .left .saved a i{
+    font-size: 30px;
+    padding: 10px 0;
+    color: rgb(160, 105, 4);
+}
+
+
+.home-wrepper .main{
+    padding: 20px;
+    width: 70%;
+    background: rgb(129, 73, 73);
+height: 93.5vh;
+overflow: auto;
+scrollbar-width: none;
+}
+
+.home-wrepper .right{
+    overflow: auto;
+    padding: 20px 10px;
+    width: 30%;
+height: 93.5vh;
+background: gold;
+scrollbar-width: none;
+}
+.home-wrepper .right:hover{
+scrollbar-width: auto;
+}
+
+/* ===========Home section area ===========*/
