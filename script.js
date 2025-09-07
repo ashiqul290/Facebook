@@ -13,4 +13,19 @@ hideLess.addEventListener('click',()=>{
     showMore.style.display = 'block';
 
 })
+const hideGroups = document.querySelector('.hideGroups');
+const showMoreGroup = document.querySelector("#showMoreGroup");
+const hideLessGroup = document.querySelector('#hideLessGroup');
+
+
+showMoreGroup.addEventListener('click',()=>{
+showMoreGroup.style.display = 'none';
+hideGroups.style.display = 'block';
+})
+
+hideLessGroup.addEventListener('click',()=>{
+    hideGroups.style.display = 'none';
+    showMoreGroup.style.display = 'block';
+
+})
 

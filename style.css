@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+    background: rgb(245, 241, 241);
+}
 .container{
     max-width: 1490px;
     margin: 0 auto;
@@ -298,8 +301,8 @@ color: black;
     padding: 10px 0;
     color: rgb(6, 77, 124);
 }
-.home-wrepper .left .reels a i{
-    font-size: 30px;
+.home-wrepper .left .reelsrigth a img{
+    width: 35px;
     padding: 10px 0;
     color: rgb(170, 68, 1);
 }
@@ -313,7 +316,6 @@ color: black;
 .home-wrepper .main{
     padding: 20px;
     width: 70%;
-    background: rgb(129, 73, 73);
 height: 93.5vh;
 overflow: auto;
 scrollbar-width: none;
@@ -331,4 +333,61 @@ scrollbar-width: none;
 scrollbar-width: auto;
 }
 
+.group-item .groupName{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+margin-top: 10px;
+}
+.group-item .groupName h4{
+ font-size: 20px;
+ color: gray;
+}
+.group-item .groupName a{
+    font-size: 16px;
+    color: blue;
+    font-weight: 600;
+    display: none;
+}
+.group-item:hover a{
+    display: block;
+}
+
+.uplod-area{
+    margin: 0 auto;
+    width: 90%;
+border-radius: 10px;
+background: white;
+box-shadow: 0 0 3px rgba(0, 0, 0, 0.486);
+}
+.uplod-area .uplod{
+    display: flex;
+    align-items: center;
+   gap: 20px;
+        padding: 10px 20px;
+}
+.uplod-area .uplod img{
+    width: 40px;
+    border-radius: 50%;
+}
+.uplod-search{
+    font-size: 16px;
+    color: gray;
+    background: rgba(128, 128, 128, 0.233);
+    width: 100%;
+    padding: 15px ;
+    border-radius: 20px;
+}
+.video-area{
+    display: flex;
+    justify-content: space-around;
+}
+.video-area .live{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 0;
+}
 /* ===========Home section area ===========*/
