@@ -326,7 +326,7 @@ scrollbar-width: none;
     padding: 20px 10px;
     width: 30%;
 height: 93.5vh;
-background: gold;
+
 scrollbar-width: none;
 }
 .home-wrepper .right:hover{
@@ -389,5 +389,10 @@ box-shadow: 0 0 3px rgba(0, 0, 0, 0.486);
     align-items: center;
     gap: 10px;
     padding: 20px 0;
+}
+
+.right-h2{
+    color: gray;
+    font-size: 25px;
 }
 /* ===========Home section area ===========*/
